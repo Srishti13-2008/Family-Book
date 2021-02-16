@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>
+            Family Book
+        </title>
+    </head>
+    <body>
+        <img id="album" src="https://languageduringmealtime.com/wp-content/uploads/2014/11/The-family-book-e1417314391978.jpg">
+    <div>
+    <button type="button" onclick="nextslide()">
+      Move
+      </button>
+    </div>
+  </body>
+  </html>
+  <script>
+      var images=[
+      "https://languageduringmealtime.com/wp-content/uploads/2014/11/The-family-book-e1417314391978.jpg" , "https://clipartspub.com/images/father-clipart-transparent-4.jpg", "https://thumbs.dreamstime.com/b/smiling-mother-illustration-white-background-34713707.jpg" ];
+var i= 0;
+function nextslide() {
+if (i==9)
+  {i=0;}
+  document.getElementById("album").src= images[i];
+  i++;
+}
+  </script>
+   
